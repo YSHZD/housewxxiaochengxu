@@ -1,0 +1,10 @@
+<view class="container">
+  <view class="head">{{currentItem[0].title}}</view>
+  <radio-group class="radio-group" bindchange="radioChange" data-id="{{currentItem[0].id}}">
+    <label class="radio" wx:for="{{currentItem[0].option_value_format}}" wx:key="{{index}}">
+      <radio value="{{item.option}}" checked="{{item.checked}}"/>{{item.text}}
+    </label>
+  </radio-group>
+  <view class="back" wx:if="{{historyId.length>0}}" bindtap="back">返回上一题</view>
+  <view class="tips" wx:if="{{currentItem[0].title}}"><text>友情提示</text><text>{{currentItem[0].remark}}</text></view>
+</view>

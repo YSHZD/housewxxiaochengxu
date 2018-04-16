@@ -1,0 +1,22 @@
+<view class="container">
+  <view class="result_img" wx:if="{{src}}"><image mode="aspectFit" src="{{src}}"/></view>
+  <view class="main">
+    <text class="title">{{title}}</text>
+    <text class="dec">{{dec}}</text>
+    <navigator url="/pages/index/index" open-type="redirect"  hover-class="none" ><button>重新测试</button></navigator>
+  </view>
+  <view class="help" wx:if="{{list.length>=0}}">
+    <text class="helptips">你也许想看</text>
+    <view wx:for="{{list}}" wx:key="{{index}}" class="item">
+      <navigator url="/pages/outUrl/outUrl?url={{item.link}}"><text>{{item.title}}</text><image src="../../images/right.png"/></navigator>
+    </view>
+  </view>
+  <swiper wx:if="{{banner.length>=0}}" indicator-dots="{{indicatorDots}}"
+  autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+   <navigator wx:for="{{banner}}"  wx:key="{{index}}" url="/pages/outUrl/outUrl?url={{item.link}}">
+    <swiper-item>
+      <image style="width:100%;" src="{{item.img}}"/>
+    </swiper-item>
+  </navigator>
+</swiper>
+</view>

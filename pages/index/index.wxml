@@ -1,0 +1,20 @@
+<view class="container">
+    <view class="start">
+       <view class="header">购房资质测试</view>
+       <text>这里有专家帮你评估,你是否有资格买房?</text>
+    </view>
+    <view class="adress">
+      <view class="left">
+      <image src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB0AAAAiCAMAAACUYSJFAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAFcUExURQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABrtzAgAAABzdFJOUwCyYPoKAyT8/gsEAQmXI7gdswYOHHLhtvAieMJ5vn29qwKbcJCw4DtW76fVX0LU/eRGz62asZZSrzElNnalR9eGyyc1PO4R+95x9Y7QjfTcGvdIDSleQ4eZ2qFzMsEMgyHpt/jT+ZT2oOgW0oiY5kDt807kDITTAAAB0klEQVQoz3VShXbbQBBc2XIEhiR2bIeZmZmZodykDRbC0Pn/9zo6SbFlJ/uetDM7p7vZW4n4UTWbzRgwMtnZKimMmVLkonQmoFmjXv3Ky6NWTizrYcHQQtO22NMhzSDrqfDFikHSkZLXxSUj5IOebPUD4d7ASb1hoN/dPE6xr8BkH+W4A1ZMIFTUQwgwV5jLgUmvFPvy+cNHD08C5fRrwnANRU8q6eboa9K1ZsAsky21xolvXq/ZiKLcc0s0/9QJCt+Ph/lO+ydrsgkkFPsJXPOrMyCjeALYlA2YaqdoGMY6s30BHDqFiIkNASpdv8CLAr+ATwrQo2wDuiI3wKozSE7x1OE6sC1LwLxSH4DHf+tPC8Cl4vPAkiwCc+6g1ryOfv9QfA5YlGX4t7H6rMS/E/5tYFmEP8WYex2393drC3/OXTLGX4RpilPoLJpCJ6cw5YBxoCtRICa6gHGFUu3AcCwgxnaB9pSLO2igsSlPbGqk1Q6ftdBqa57aSt6So82kta+slqw5b7HNOaLaI9XEmp1vQ69jqV7BeqI6PdiCXsPiXlSiO8w1emH7VgPL3aluvhusosuRZBuFfT5tSXkjInE1hXhE3o70AAbS8m4MHQwF+H9W+YKXKf7a5AAAAABJRU5ErkJggg==" />
+      <text wx:if="{{currentCity}}">{{currentCity}}</text><text wx:else>请手动切换城市</text>
+      </view>
+      <view class="right">
+        <picker bindchange="bindPickerChange" mode = "selector" value="{{index}}" range="{{array}}" range-key="{{'city'}}">
+		    <view class="picker">
+		      切换城市
+		    </view>
+		</picker>
+      </view>
+    </view>
+    <navigator url="/pages/answer/answer?cityId={{cityId}}" wx:if="{{cityId>-1}}" open-type="redirect"  hover-class="none" ><button bindtap="" hover-class="none">开始测试</button></navigator>
+</view>

@@ -1,0 +1,13 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/answer/answer",
+    "pages/result/result",
+    "pages/outUrl/outUrl"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#ffffff",
+    "navigationBarTitleText": "买房资格查询",
+    "navigationBarTextStyle": "black"
+  }
+}

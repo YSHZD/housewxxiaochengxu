@@ -1,0 +1,20 @@
+/* pages/index/index.wxss */
+page {
+  color: #666;
+  height: 100%;
+  background-color: #f5f5f5;
+  
+}
+.start text{font-size:24rpx;color:rgba(57,64,67,.6)}
+image{width:34rpx;height:40rpx;}
+.start{padding-top:300rpx;}
+.header{font-size:56rpx;color:#394043;font-weight:600}
+.container {
+  padding-top: 20rpx;
+  padding:0 60rpx;
+}
+button{background:#00ae66;color:#fff;height:80rpx;line-height:80rpx;margin-top:150rpx;}
+.adress{margin-top:20rpx;display:flex;flex-direction:row;height:90rpx;line-height: 90rpx;border-top:2rpx solid #e5e5e5;border-bottom:2rpx solid #e5e5e5;}
+.adress .left{width:280rpx;display:flex;align-items: center;}
+.left text{margin-left:16rpx;font-weight: 500;font-size:30rpx;color:#394043;}
+.adress .right{flex:1;display:flex;justify-content: flex-end;color:#00ae66;font-size:30rpx;}

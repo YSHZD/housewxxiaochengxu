@@ -1,0 +1,16 @@
+.btn-primary{
+    color: #fff;
+    background-color: #38cfba;
+}
+
+.btn-primary-hover{
+    background: #07baa1;
+}
+::-webkit-scrollbar
+{
+    width: 0px;
+    height: 0px;
+}
+page{
+  word-break: break-all;
+}

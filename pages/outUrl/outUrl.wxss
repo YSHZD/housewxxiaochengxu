@@ -1,0 +1,19 @@
+/* pages/index/index.wxss */
+page {
+  color: #666;
+  height: 100%;
+  background-color: #f5f5f5;
+  
+}
+.result_img{display: flex;justify-content: center;}
+.result_img image{max-width:300rpx;}
+.main{padding:0 50rpx;box-sizing: border-box;display: flex;flex-direction:column;}
+.title{font-weight: 500;color:#333;font-size:40rpx;text-align: center;}
+.dec{font-size:22rpx;color:#808080;margin:30rpx 0;}
+button{border:2rpx solid #00ae66;color:#00ae66;height:80rpx;line-height:80rpx;margin-top:50rpx;width:200rpx;}
+.help{margin-top:40rpx;padding:0 30rpx;box-sizing: border-box;}
+.helptips{font-weight: 500;color:#000;font-size:34rpx;display: flex;padding-bottom:30rpx;}
+.item{display: flex;flex-direction: row;align-items: center;height:80rpx;line-height: 80rpx;border-bottom:2rpx solid #ededed;}
+.item image{width:20rpx;height:30rpx;
+}
+.item text{flex:1;overflow: hidden;white-space: nowrap;text-overflow:ellipsis;font-size:26rpx;color:#333;padding-right:20rpx;box-sizing: border-box;}
