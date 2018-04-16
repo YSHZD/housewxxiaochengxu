@@ -9,3 +9,8 @@ git push -u origin master
 
 
 over
+git clone url
+git remote add origin url
+git fetch origin master
+git diff 
+git merge
