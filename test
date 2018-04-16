@@ -9,8 +9,8 @@ git push -u origin master
 
 
 over
-git clone url
+git init
 git remote add origin url
-git fetch origin master
-git diff 
-git merge
+git fetch origin master:ysh
+git diff ysh
+git merge ysh
